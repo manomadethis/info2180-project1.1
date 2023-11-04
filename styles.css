@@ -1,11 +1,259 @@
 /* Add your CSS to this file */
+
+* {
+  margin: 0;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
 body {
-    margin: 0;
-    font-size: 16px;
+  margin: 0;
+  font-size: 18px;
 }
 
 .container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+header {
+  background-color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  margin: 20;
+} 
+  
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20;
+  padding: 5px;
+}
+
+header h1 {
+  margin: 2% 7%;    
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  list-style-type: none;
+  margin-left: 10%;
+}
+
+header li a {
+  color: #6b7280;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+header li a:hover {
+  color: #5A67D8;
+}
+
+
+.overview-hero {
+  width: 30v;
+}
+
+.overview-hero .container{
+  background-color: #E2E8F0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+.overview-hero-image img {
+  /*border-radius: 500px;*/
+  align-self: flex-start;
+  margin: 20px 30px 0 0;
+  width: 170px;
+}
+
+.learn-about .container {
+  align-items: center;
+  width: 70%;
+  justify-items: center;
+}
+
+.learn-about .container h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color:#48BB78
+}
+
+.learn-about h3 {
+  font-size: 21px;
+  color: #48BB78
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 1vw;
+  margin-top: 30px;
+}
+
+.card {
+  border-radius: 5px;
+  border: solid #E2E8F0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+.card img {
+  height: 27vh;
+}
+
+.testing .container {
+  background-color: #4A5568;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20vh 4vw;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.testing h2 {
+  width: 40vw;
+  margin-left:10vw;
+}
+
+.testing p {
+  width:40vw;
+  margin-left:10vw;
+}
+
+.cta {
+  background-color: #48BB78;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  padding: 13px 13px;
+  cursor: pointer;
+  justify-content: center;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.cta a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.stories .container a, h2{
+  color: #5A67D8;
+  font-size: 18px;
+}
+
+.stories .container a {
+  text-decoration: none;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.stories img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+article {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-right: 50px;
+}
+
+article img {
+  height: 30vh;
+  border-radius: 100%;
+  margin-right: 45px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.newsletter .container{
+  background-color: #48BB78;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw;
+}
+
+.newsletter h3 {
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  width: 40vw;
+}
+
+button {
+  background-color: #5A67D8;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.form-group {
+  display: inline-flex;
+  align-items: center;
+  /*flex-direction: row;*/
+}
+
+form button {
+  background-color: #5A67D8;
+  border-style: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer .container {
+  background-color: #4A5568;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 10vw;
+  padding-left: 9w;
+  margin: 0 auto;
+  height: 10vh;
+  width: 100%;
+}
+
+footer p {
+  margin-left:110px;
+}
+
+input/*[type=email]*/ {
+  padding:  12px;
+  border-style: none;
+  border-radius: 5px; 
+  margin-top: 20px;
+}
+
+.message {
+  color: #fff;
+  font-style: italic;
+  padding-top: 20px;
 }
